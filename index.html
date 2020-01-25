@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Jacob Nelson • Full-Stack Engineer 💻</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta content="en_US" http-equiv="Content-Language">
+    <meta
+        content="Full-Stack Engineer working from Austin, TX. Web Developer Intern at Larson Manufacturing, Student Programmer at South Dakota State University. Years of experience with Javascrpit, HTML, and CSS."
+        name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link id="favicon" rel="shortcut icon" type="image/png"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACPTkDJAAAKIElEQVRYCa1We3BU1Rn/7t279+7e3bvv3WSzeYELAYxNovKqo45WJY7KtHR4CJZB0MC046j4HHGs+IettRZlSqV0QMEoiqggU/QPUUaLQUBjwZgmkUQ2Dzb7yGZfd3fvs9/ZdSEZqbXWk9w9Z889+/1+3/tQ8CON1atXN6RSqXsoinrg9ddfz3xfsfT3PVg+F381OC/+yqyLy9/LM8Mwg4qiTJFl+aNVq1Y5yvv/bf6fCERf9rfxgcAH5grh8NCO6ray8KVLl96dyWRu2rdvXysS6Uwmkwfb2tqM5fffNf9HAqN7Zswf23fxH8KvBG8pCxBF+h7OzJnMLsFjq3L8deA5zzLyjqbpD9Lp9MZf4di7d+9q3FKTicRz5d9913xBAqFXuYvMguUDR23NA3a/8+3om5XPECHRUKo3G4vhigKr0wYWH7/j1LPsT3bv3n3S6/XejDHwJHKYKwjCilyhsBhdMfu7wMm7CxJI9NIeOZfjKE0Fk9MNvM23fmSLfS0Tlh4c7A4pSiYNFAUg+ASzYHXuPLgZuB07dvQj8IPois27du0KmUym7bh+9AcR6EnkTg72jfTmEnEARQbeLgBf7Xmea6H88Whi7XB3CFRZAtZihYpad3Md73iSALW3t+9Gd8RXrFixFAk8LUnSnNtuu+36iSR6DkwPRPd7rkm8U1lP9i9ogSWbIJfoyKw982VILaSQBFrC6nFQ/oBvv8vGvvd1V/SFsaFxoDk7mFxOqHK51ndvsS4iAhH4b7lc7g60QhzXryKJRrJPRv+WyieqjLYuu6fpfau56tR7v1vYZii9mvyZeW9KRcMjY13L3IVTqklearFzwJp54ASniTaqN+Wy2XVjg+KVdq/Vz1p5MDAa6Dn12g1zldf2D110UtO005dccskQ1oN3urq6PiHSe571bKxomPKY4K82gYEFWaJYTurMoyfPj7GHwK5Prb+Xb6y5T0mNn4kfH76zN5Zumt7oer6maSbQJhvoUgISfaff7e2MbuDdlsMz508TjGYDFLJZGO0f/TCqRK67fC3I56UCHH0Kqv3uwFc1LZdyiqqAKomQGIioJ7qG509yQbLa3qpXmB428RartbLyYu9P/R9V1PC9oZ7khkj/IIJngUL2tlp/a1Wjc116NHvXUPcw6IwbOFcNeOu8V7kp11MTwcnakWSmsRYTBzQF6FPIJyJwdiByaOHvU8cnEYj2aYOJM7FhJY2ppmnAOzyGYKP/bYeHOzbw2dDW2MDXAHIeGI6DqmDdnbVBe224O7op0h/GaLKC2eECl991b88m1x0TSUicYmKMDCqQBE1KQzomwliisJ2cmURg9uZ0Ryice3ykdxBUcRxARxIel2VKs/8Ns8C29x0f2Z8YJmAWYJxBqGyZ8YSjgg0PHO86lDkbAjBYQPC6oCLo3BreJiwsk5B14/W8w45K5TGeJRBTclKLZQ6T95OCcCNu7PqHfPKXjkKasqsLrAJajbMCa3NxPK/cPB7O3h8bTjc6KlxVrM0HBs4MZot0VTqeOG3kTEHB58H6YAATz9GKpixec3lOWDPHcKVvWs16V90UA6hZKIhZSI6InfOfETd/iwDZIOOFf2odC+tF0WSmrrc6XUAxHHAW/OO1K8dCyfWpaGqe4GLcrIkF1mpjvLX+IO9yAc2wJQFoOc5qoq1e+xXuqf6rnXUzDRRjAl1OYQzkYXQk373tkNhODk+yQOnXpc+dn+gfL7ooJ7Oc9jOLYEISRixIFhcvUC1n+2KPiYnE1Q6fzcqY7UDzlUAbTVi0sAuruaLrKNAwPRkwWt1AmXy4h3IVJCAXIDtegF/Py2z9y2FQL0gg8U7TooeXuW5V5Pwr4d6xKMMo11psPFBmN5jdHh9Dp+pD3dE/0TRc6wjUsZRRQGARAZJFP+MHolFA0WgR1oVq4ntMeIoQwBSUsrIjPKy99kKHFGUmak3W8W01C3jB9obRzIGR0e9X5cE7+09FNtKM8be+GV6sBQL4ZzbM0XUmoIGZIqkFShoJZIuaF5GIIIwFIARoM/mC/xjvVAmO5WhaF8z1AJkvJ2UB+V0knbLmx+NA6TJYvF7z1Obqdq/DMP51Z3hz9Kte0PMpAMYKVU3NgeqmWTyl5zE1MWO0Avn5N6AczngdMKBbyIz4JRIGDFIKWBMNGVGuILvnXLB48WJ7U1OTo0E4cSo/mr2Bt2oBhmWA4zG1Ao7WfCZ9aKg71klDfq7FIWB22FC4BbVW8ZFKM9GaaFkExdmA2jN4psSgFANYiAo5bGS6dmTLu9mPaezfjQhuxjErn88feDN+l872iD/v+TTcmQyPFrse56iA4LyZj3irzZavTgw9P/KvfkXHklrSimhYBiYmR+0JCbI3qcyQuMCegRlCUTrGJF2LG0Bj53pI1/Vt2L068DoVGh0dfWxWO5xNhOnWgc7YkeRoFNRMHKufCabOnb4m0GCvzyWzoyBjxKObihcDAlo0N/Fx0d5ENg4E1fAMsRLJDhULkaKChiSMuqHoAtputz+KLfOGlStXXoe3mlW4XrJ8+fKVC7ZmImcj+Rv6jkcOxs8MgpJNgJG3wfQrmm4MzpkeIFoU/a6hJYoWQEuQVCtmAFmQ9xgfKhIl2SHFQCmksQtKyEkGWSPMkHdnZ2fysssuy+J16s94mdjKsuzf8SbzYktLS2bDzi+O3utX90YKip/hlEt5ixFoA40FB8EwEMHAI06ZAIln1Bi1K4KrGJTfaE1IqIUkdkxsRNg1pRQWoyTz8o73M0fO2WvJkiVbC4XCVW63ey5KEBKJxMsYsXGDwbAc+7rU8YDxj4EZtvu89T68G1gwu9CCnL8EVlK9BE7comFQyslS5VNQY7xVSfkc5FIZrAFZLEQGGE8Ks+c+PnjiXBru2bNnHYIdicViXRiMvrfeeusajuOeraysLJKc/7R8f//nmQeHuoZQ0DgKT6CGmPsUCUIMPvLQJO3IU0pDHW9SMpZeonUulYZ8Mg2FlATpMLOfgCP782lIvnR3dx9obm7WRFHc2djY6EZS248dO4YRVBovHlM/XjRV7VHy4k0Wu8HImkj040PS7lzw4XFSmNACcgE1xuaTz4hQQHApXYBIjEslz+QWv3RKHSNSSa5MGuQKNXv27L2YGU5cF1lOPLDzuP7FLXXKUTkr3ig4KQtrJCZHf5NaoGGkE9NLY6Dkkqh5pqh5YRyJpBA8zErJmGFZ6y6xoyzzXAyUN77vfPB2dpbLT70ZvNTbIHixIRWLD40Zp+BFWsK2m4N8mgBn0PQyhMNGMTVuWHHLi+K+iRg/mAARcuBW8FjdzLbaBv4X9kozln4GLxwaFi8kkcujv/N4+9HgTMT4Kfu52tZ6VP5sIjhZ/18EysL2rKHv9nvp3zit9DS8OmAm6pDLapBN0H2hKLVdCkvP3X4YsCh8e/woBIjYx9eBLzhuuMLNUsGxPIalaDxtd+Y+XPASRL4Ne37n3/KHiNJiJ+BiAAAAAElFTkSuQmCC">
+    <link href="https://www.jacobnelson.tech" rel="canonical">
+    <style type="text/css">
+        * {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding-top: 150px;
+            color: #000;
+            transition: background 500ms ease-in-out, color 500ms ease-in-out;
+        }
+
+        body[data-theme="dark"] {
+            background: #11131f;
+            color: #fff;
+        }
+
+        body[data-theme="dark"] a {
+            border-bottom-color: rgba(255, 255, 255, 0.4);
+        }
+
+        body[data-theme="dark"] h1,
+        body[data-theme="dark"] h4 {
+            opacity: 1;
+        }
+
+        body[data-theme="dark"] blockquote {
+            opacity: 0.9;
+        }
+
+        body[data-theme="dark"] header nav button {
+            font-size: 24px;
+            line-height: 17px;
+        }
+
+        a,
+        a:active,
+        a:visited,
+        a:focus {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: dashed 1px rgba(0, 0, 0, 0.4);
+            padding-bottom: 2px;
+            transition: border-bottom-color 500ms ease-in-out;
+        }
+
+        a:focus,
+        a:hover {
+            border-bottom: solid 1px rgba(0, 0, 0, 0.4);
+            outline: none;
+        }
+
+        button {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            padding: 0;
+            border: none;
+            font-size: inherit;
+            cursor: pointer;
+            background: none;
+            color: inherit;
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        header {
+            margin: 0 0 150px;
+            position: relative;
+            padding-left: 87px;
+        }
+
+        .profile-image-container {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            top: -12px;
+            left: 0;
+        }
+
+        .profile-image-container:before {
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            width: 64px;
+            height: 64px;
+            border-radius: 999px;
+            background: #ffca57;
+        }
+
+        .profile-image-container img {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            border-radius: 25px;
+        }
+
+        header nav {
+            position: absolute;
+            right: 0;
+            top: 12px;
+        }
+
+        header nav a {
+            opacity: 0.666;
+            margin-right: 25px;
+        }
+
+        header nav button {
+            transform: rotate(40deg);
+            width: 22px;
+        }
+
+        h1 {
+            margin: 0 0 1px;
+            font-size: 20px;
+            font-weight: 500;
+            opacity: 0.855;
+        }
+
+        h2 {
+            margin: 0;
+            font-weight: 400;
+            font-size: 17px;
+            opacity: 0.535;
+        }
+
+        h3 {
+            font-size: 13px;
+            opacity: 0.535;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin: 0 0 35px;
+        }
+
+        h4 {
+            font-size: 17px;
+            font-weight: 500;
+            opacity: 0.855;
+            margin: 0 0 8px;
+        }
+
+        h5 {
+            font-size: 15px;
+            font-weight: 400;
+            opacity: 0.666;
+            margin: 0 0 28px;
+        }
+
+        .currently-looking-tag {
+            margin-bottom: 20px;
+        }
+
+        .tag {
+            font-size: 12px;
+            font-weight: 400;
+            padding: 5px 15px;
+            border-radius: 3px;
+            vertical-align: text-top;
+            display: inline-block;
+            white-space: nowrap;
+        }
+
+        .tag-primary {
+            background: #68b0f1;
+            color: #fff;
+        }
+
+        .tag-secondary {
+            background: #5fc383;
+            color: #fff;
+        }
+
+        .tag-tertiary {
+            background: #ea86ae;
+            color: #fff;
+        }
+
+        blockquote {
+            margin: 0 0 150px 0;
+            font-size: 32px;
+            line-height: 1.5625em;
+            opacity: 0.666;
+            max-width: 970px;
+            font-weight: 300;
+        }
+
+        section {
+            margin-bottom: 150px;
+        }
+
+        .resume-item {
+            margin-bottom: 80px;
+        }
+
+        .resume-item ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 0 28px;
+        }
+
+        .resume-item li {
+            font-size: 17px;
+            opacity: 0.666;
+            margin-bottom: 13px;
+            line-height: 1.4em;
+        }
+
+        .resume-item-dates {
+            font-size: 15px;
+            opacity: 0.535;
+            margin: 0;
+        }
+
+        .resume-item .tag {
+            margin-left: 18px;
+        }
+
+        .high-five {
+            text-align: center;
+        }
+
+        .high-five button {
+            font-size: 40px;
+            color: #000;
+            transition: transform 150ms ease-in-out;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        .high-five button:active {
+            transform: scale3d(0.9, 0.9, 0.9);
+        }
+
+        .high-five p {
+            font-size: 15px;
+            opacity: 0.535;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding-top: 50px;
+            }
+
+            body[data-theme="dark"] header nav button {
+                font-size: 18px;
+                line-height: 16px;
+                margin-bottom: 2px;
+            }
+
+            .container {
+                padding: 0 30px;
+            }
+
+            header {
+                padding-left: 0;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+
+            .profile-image-container {
+                position: relative;
+                width: 100px;
+                height: 100px;
+                display: inline-block;
+                top: auto;
+                left: auto;
+            }
+
+            .profile-image-container:before {
+                width: 94px;
+                height: 94px;
+                top: 5px;
+                left: 7px;
+            }
+
+            header nav {
+                margin-right: -27px;
+                position: static;
+                font-size: 13px;
+            }
+
+            header nav a {
+                margin-right: 10px;
+                opacity: 0.4;
+            }
+
+            h1 {
+                margin-bottom: 3px;
+            }
+
+            h2 {
+                display: none;
+            }
+
+            h3 {
+                font-size: 11px;
+            }
+
+            h4 {
+                font-size: 15px;
+                padding-top: 30px;
+                position: relative;
+            }
+
+            h5 {
+                font-size: 14px;
+            }
+
+            .currently-looking-tag {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            .tag {
+                padding: 4px 11px;
+            }
+
+            blockquote {
+                text-align: center;
+                font-size: 17px;
+                margin-bottom: 50px;
+            }
+
+            section {
+                margin-bottom: 50px;
+            }
+
+            .resume-item {
+                margin-bottom: 50px;
+            }
+
+            .resume-item li {
+                font-size: 14px;
+            }
+
+            .resume-item-dates {
+                font-size: 13px;
+            }
+
+            .resume-item .tag {
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin: 0;
+            }
+
+            .high-five p {
+                font-size: 13px;
+                margin: 0;
+            }
+        }
+    </style>
+    <script id="plausible" src="https://plausible.io/js/p.js" async=""></script>
+    <script>
+        (function (w, d, s, o, f, js, fjs) {
+            w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+            js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+            js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+        }(window, document, 'script', 'plausible', 'https://plausible.io/js/p.js'));
+
+        plausible('page')
+    </script>
+</head>
+
+<body data-theme="dark">
+    <div class="container">
+        <header>
+            <div class="profile-image-container">
+                <img src="profile_image.jpg" alt="Jacob Nelson">
+            </div>
+            <h1>Jacob Nelson</h1>
+            <h2>Hello.</h2>
+            <nav>
+                <a target="_blank" href="https://linkedin.com/in/jmnelson12"
+                    rel="noreferrer noopener nofollow">Linkedin</a>
+                <a target="_blank" href="https://github.com/jmnelson12" rel="noreferrer noopener nofollow">Github</a>
+                <a target="_blank" href="mailto:mail@jacobnelson.tech">Email</a>
+                <button id="theme-button">☼</button>
+            </nav>
+        </header>
+        <div class="currently-looking-tag">
+            <span class="tag  tag-primary">Currently Looking</span>
+        </div>
+        <blockquote>
+            Full-Stack Developer currently working in <a target="_blank" href="https://goo.gl/maps/49PviVuocbzRvjuQ7"
+                rel="noreferrer noopener nofollow">Brookings, SD</a> and looking to relocate to <a target="_blank"
+                href="https://goo.gl/maps/4VRSVVcjChoCx2Vy5" rel="noreferrer noopener nofollow">Austin, TX.</a>
+            Currently a Web Developer Intern at <a target="_blank" href="https://www.larsondoors.com"
+                rel="noreferrer noopener nofollow">Larson Manufacturing</a>, and Student Programmer at
+            <a target="_blank" href="https://www.sdstate.edu" rel="noreferrer noopener nofollow">SDSU</a>.
+        </blockquote>
+        <section>
+            <h3>Resume</h3>
+            <div class="resume-item">
+                <h4>
+                    Web Developer Intern
+                    <span class="tag  tag-secondary">On-Site</span>
+                </h4>
+                <h5>
+                    <a target="_blank" href="https://www.larsondoors.com"" rel=" noreferrer noopener nofollow">Larson
+                        Manufacturing</a>
+                </h5>
+                <ul>
+                    <li>Building employee directory to show all 1200+ employees.</li>
+                    <li>Saved company ~$10,000 in consulting fees on a project to develop an automated form exporter.
+                    </li>
+                    <li>Utilized the Google Maps API to show the location of every Larson salesperson (~80) in the US
+                        and Canada.</li>
+                    <li>Build and maintain web parts/widgets for SharePoint and SiteFinity cms's.</li>
+                    <li>Stack: Typescript, React, Sass, C#, .Net MVC, SQL, SharePoint, SiteFinity</li>
+                </ul>
+                <p class="resume-item-dates">May 2017 - Jan 2020 (2 years, 8 months)</p>
+            </div>
+            <div class="resume-item">
+                <h4>
+                    Student Programmer
+                    <span class="tag  tag-secondary">On-Site</span>
+                </h4>
+                <h5>
+                    <a target="_blank" href="https://www.sdstate.edu" rel="noreferrer noopener nofollow">South Dakota
+                        State University</a>
+                </h5>
+                <ul>
+                    <li>Utilized formsite.com to create various forms to be used by students across campus.</li>
+                    <li>Further customized forms using JavaScript and CSS. Reduced development process speed by 60%.
+                    </li>
+                    <li>Pulled in form data using SQL to be easily viewable and filterable by internal SDSU employees.
+                    </li>
+                    <li>Stack: JS, CSS, SQL, SharePoint, FormSite</li>
+                </ul>
+                <p class="resume-item-dates">Apr 2016 - Jan 2017 (9 months)</p>
+            </div>
+        </section>
+        <section class="high-five">
+            <button id="high-five-button">✋</button>
+            <p>Thanks for reading.<br>High five!</p>
+        </section>
+    </div>
+
+    <script type="text/javascript">
+        // -------------------------------------------------------
+        //  Themes
+        // -------------------------------------------------------
+        //  Simple theme switcher.
+        // -------------------------------------------------------
+
+        // Set the theme (either light or dark, controlled by a bool `light` flag).
+        const themeButton = document.getElementById('theme-button');
+        function setTheme({ light = true }) {
+            if (light) {
+                document.body.setAttribute('data-theme', 'light');
+                themeButton.innerText = '☽';
+            } else {
+                document.body.setAttribute('data-theme', 'dark');
+                themeButton.innerText = '☼';
+            }
+        }
+
+        // Toggle the theme when the user clicks the button.
+        const THEME_STORAGE_KEY = 'jacobnelson.tech_theme';
+        function toggleTheme() {
+            const light = document.body.getAttribute('data-theme') !== 'light';
+            setTheme({ light });
+
+            // Remember.
+            localStorage.setItem(THEME_STORAGE_KEY, document.body.getAttribute('data-theme'));
+        }
+        themeButton.onclick = toggleTheme;
+
+        // Default to the user's theme, or their stored preference.
+        const stored = localStorage.getItem(THEME_STORAGE_KEY);
+        const defaultIsLight = !(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        setTheme({ light: stored ? stored === 'light' : defaultIsLight });
+
+        // -------------------------------------------------------
+        //  High five
+        // -------------------------------------------------------
+        //  Adapted from https://codepen.io/Balo/pen/yLLrjje
+        // -------------------------------------------------------
+
+        // Fire the glitter cannon upon high five.
+        const highFiveButton = document.getElementById('high-five-button');
+        highFiveButton.onclick = () => {
+            fireGlitterCannon();
+        };
+
+        // The area the glitter will spread, bottom-centered on the middle of the hand.
+        const GLITTER_AREA_WIDTH = 500;
+        const GLITTER_AREA_HEIGHT = 500;
+
+        // The number of particles to generate per firing.
+        const NUM_PARTICLES = 80;
+
+        // The particle colours (selected randomly).
+        const PARTICLE_COLOURS = ['#ffca57', '#68b0f1', '#5fc383', '#ea86ae'];
+
+        // Fire glitter when the user gives a high-five.
+        function fireGlitterCannon() {
+            // Fire from the center of the hand.
+            const originX = highFiveButton.offsetLeft + highFiveButton.offsetWidth / 2.0;
+            const originY = highFiveButton.offsetTop + highFiveButton.offsetWidth / 2.0;
+
+            // Determine the dimensions, ensuring it doesn't exceed screen bounds.
+            const width = Math.min(GLITTER_AREA_WIDTH, window.screen.width - 1);
+            const bottom = window.scrollY + window.innerHeight;
+            const height = Math.min(GLITTER_AREA_HEIGHT, (bottom - originY) * 2);
+
+            // Create and position the canvas.
+            let c = document.createElement('canvas');
+            c.style.position = 'absolute';
+            c.style.left = `${(originX - width / 2.0)}px`;
+            c.style.top = `${(originY - height / 2.0)}px`;
+            c.style.pointerEvents = 'none';
+            c.style.width = `${width}px`;
+            c.style.height = `${height}px`;
+            c.style.zIndex = -1;
+
+            // The actual canvas draw area is multiplied by the device pixel ratio.
+            let ratio = window.devicePixelRatio;
+            c.width = width * ratio;
+            c.height = height * ratio;
+
+            // Add it to the document.
+            document.body.appendChild(c);
+
+            // Generate the particles.
+            let particles = [];
+            for (let i = 0; i < NUM_PARTICLES; i++) {
+                particles.push({
+                    x: c.width / 2.0,
+                    y: c.height / 2.0 + (Math.random() * 30 + 15),
+                    radius: rand(3, 8),
+                    color: PARTICLE_COLOURS[Math.floor(Math.random() * PARTICLE_COLOURS.length)],
+                    rotation: rand(0, 360, true),
+                    speed: rand(7, 14),
+                    friction: .99,
+                    fade: .3,
+                    opacity: rand(150, 150, true),
+                    yVel: 0,
+                    gravity: 0//0.06
+                });
+            }
+
+            const ctx = c.getContext('2d');
+            renderGlitterParticles(particles, c);
+            setTimeout(() => document.body.removeChild(c), 5000);
+        }
+
+        // Render a frame of the particles.
+        function renderGlitterParticles(particles, canvas) {
+            if (document.body.contains(canvas)) {
+                requestAnimationFrame(() => renderGlitterParticles(particles, canvas));
+            }
+
+            const ctx = canvas.getContext('2d');
+            const width = canvas.width;
+            const height = canvas.height;
+            ctx.clearRect(0, 0, width, height);
+
+            particles.forEach((p, i) => {
+                p.x += p.speed * Math.cos(p.rotation * Math.PI / 180);
+                p.y += p.speed * Math.sin(p.rotation * Math.PI / 180);
+
+                p.opacity -= 0.005;
+                p.speed *= p.friction;
+                p.radius -= p.fade;
+                p.yVel += p.gravity;
+                p.y += p.yVel;
+
+                if (p.opacity < 0 || p.radius < 0) return;
+
+                ctx.beginPath();
+                ctx.globalAlpha = p.opacity;
+                ctx.fillStyle = p.color;
+                ctx.arc(p.x, p.y, p.radius, 0, 2 * Math.PI, false);
+                ctx.fill();
+            });
+
+            return ctx;
+        }
+
+        // Helper function to generate a random number in a range.
+        function rand(a, b, c) {
+            return parseFloat((Math.random() * ((a ? a : 1) - (b ? b : 0)) + (b ? b : 0)).toFixed(c ? c : 0));
+        }
+    </script>
+
+
+</body>
+
+</html>
